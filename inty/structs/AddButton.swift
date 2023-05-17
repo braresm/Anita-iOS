@@ -1,8 +1,6 @@
 //
 //  EditButton.swift
 //  inty
-//
-//
 
 import SwiftUI
 

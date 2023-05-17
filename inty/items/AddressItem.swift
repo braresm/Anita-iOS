@@ -2,6 +2,8 @@
 //  AddressItem.swift
 //  inty
 //
+//
+
 import SwiftUI
 
 struct AddressItem: Identifiable, Codable {

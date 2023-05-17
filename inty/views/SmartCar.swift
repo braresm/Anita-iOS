@@ -2,6 +2,7 @@
 //  Ride.swift
 //  inty
 //
+//
 
 import SwiftUI
 
@@ -10,8 +11,18 @@ struct SmartCar: View {
     @EnvironmentObject private var appState: AppState
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).onChange(of: isPresented) { newValue in
-            print(newValue)
+        NavigationView {
+            List {
+                Section {
+                    ForEach(appState.smartCar) { addr in
+                        Text(addr.alias)
+                    }
+                } header: {
+                    Text("List of rideshared destinations")
+                }
+            }
+        }
+        .onChange(of: isPresented) { newValue in
             if !newValue {
                 appState.isContextView = true
             }

@@ -2,6 +2,7 @@
 //  intyTests.swift
 //  intyTests
 //
+
 import XCTest
 @testable import inty
 

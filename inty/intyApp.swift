@@ -1,7 +1,6 @@
 //
 //  intyApp.swift
 //  inty
-//
 
 import SwiftUI
 
@@ -10,6 +9,8 @@ class AppState: ObservableObject {
     @Published var rideShare: [AddressItem] = []
     @Published var smartCar: [AddressItem] = []
     @Published var isContextView = true
+    @Published var listsNavigationBarDisplay = false
+//    @AppStorage("addressItems") private var stAddressItems: [AddressItem] = []
 }
 
 @main
